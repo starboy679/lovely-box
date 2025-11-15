@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovely Box – Custom & Ready-Made Gift Boxes in Egypt</title>
+  <meta name="description"
+    content="Lovely Box Egypt: Choose a ready-made gift box or design your own personalised box; we wrap, you surprise! Custom gift boxes in Cairo and across Egypt." />
+  <meta name="keywords"
+    content="custom gift box Egypt, gift boxes Cairo, personalised gift shop Egypt, design your own gift box Egypt">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo2.png">
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <div class="header-container">
+        <div class="logo" onclick="setPage('home')">
+            <img src="images/logo2.png" alt="Lovely Box" class="logo-image">
+          </div>
+        <nav>
+          <span class="nav-link" onclick="setPage('home')" id="nav-home">Home</span>
+          <span class="nav-link" onclick="setPage('ready-made')" id="nav-ready-made">Ready Made</span>
+          <span class="nav-link" onclick="setPage('custom')" id="nav-custom">Custom</span>
+          <span class="nav-link" onclick="setPage('how-it-works')" id="nav-how-it-works">How It Works</span>
+          <span class="nav-link" onclick="setPage('faq')" id="nav-faq">FAQ</span>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Home Page -->
+      <div id="home" class="page active">
+        <div class="home-container">
+          <h1>Make their day with a custom gift box from Lovely Box</h1>
+          <p class="subheadline">Choose ready-made or design your own. We'll take care of the magic.</p>
+          <div class="featured-options">
+            <div class="option-card" onclick="setPage('ready-made')">
+              <img src="images/Ready made.png" alt="Ready-Made Boxes" class="card-image">
+              <h3>Ready-Made Boxes</h3>
+              <p>Curated with love for every occasion.</p>
+            </div>
+            <div class="option-card" onclick="setPage('custom')">
+              <img src="images/custom gift.png" alt="Custom Boxes" class="card-image">
+
+              <h3>Design Your Own</h3>
+              <p>Create a truly unique and personal gift.</p>
+            </div>
+            <div class="option-card" onclick="alert('Special offers coming soon!')">
+              <img src="images/Special Occasions.png" alt="Custom Boxes" class="card-image">
+
+              <h3>Special Occasions</h3>
+              <p>Find seasonal and limited edition boxes.</p>
+            </div>
+          </div>
+          <div class="cta-container">
+            <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20place%20an%20order."
+              class="btn" target="_blank" rel="noopener noreferrer">
+              Chat on WhatsApp to Order
+            </a>
+            <button class="btn btn-secondary" onclick="openQuizModal()">Need help choosing? Try our Gift Quiz!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ready Made Page -->
+      <div id="ready-made" class="page">
+        <h2>Our Ready-Made Boxes</h2>
+        <p>Hand-picked and lovingly assembled for your special moments.</p>
+        <div class="grid">
+          <div class="card">
+            <img src="images/lux box.jpg" alt="Luxury Gift Box" class="card-image" />
+            <div class="card-content">
+              <h3>Signature Luxe Collection</h3>
+              <p>This is a pre-curated box designed for ultimate impact, featuring a sophisticated mix of high-end essentials.</p>
+              <p class="price">From EGP 750</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Signature%20Luxe%20Collection%22%20(Ref%3A%20LB001)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Blush Collection.jpg"
+              alt="Timeless Blush Collection" class="card-image" />
+            <div class="card-content">
+              <h3>Timeless Blush Collection</h3>
+              <p>A truly breathtaking arrangement combining romance and luxury.</p>
+              <p class="price">From EGP 600</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Timeless%20Blush%20Collection%22%20(Ref%3A%20LB002)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Golden Bouquet.jpg"
+              alt="Golden Bouquet" class="card-image" />
+            <div class="card-content">
+              <h3>Golden Bouquet</h3>
+              <p>A decadent, edible twist on the traditional bouquet!.</p>
+              <p class="price">From EGP 900</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Golden%20Bouquet%22%20(Ref%3A%20LB003)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Luxury Unboxing.jpg" alt="Luxury Unboxing"
+              class="card-image" />
+            <div class="card-content">
+              <h3>Luxury Unboxing</h3>
+              <p>Present a cherished gift in a style they won't forget.</p>
+              <p class="price">From EGP 1200</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Luxury%20Unboxing%22%20(Ref%3A%20LB004)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Black & White Elegance.jpg" alt="Black & White Elegance"
+              class="card-image" />
+            <div class="card-content">
+              <h3>Black & White Elegance</h3>
+              <p>A sophisticated and luxurious choice, this gift is presented in a textured black box.</p>
+              <p class="price">From EGP 450</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Black%20%26%20White%20Elegance%22%20(Ref%3A%20LB005)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Personalized Vows Card.jpg"
+              alt="Personalized Vows Card" class="card-image" />
+            <div class="card-content">
+              <h3>Personalized Vows Card</h3>
+              <p>Elevate your engagement or wedding gift with a deeply personal touch.</p>
+              <p class="price">From EGP 850</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Personalized%20Vows%20Card%22%20(Ref%3A%20LB006)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Modern Black & Gold Curator.jpg"
+              alt="Modern Black & Gold Curator" class="card-image" />
+            <div class="card-content">
+              <h3>Modern Black & Gold Curator</h3>
+              <p>The ultimate statement of luxury and style. This signature curated box is designed for the modern woman.</p>
+              <p class="price">From EGP 850</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Modern%20Black%20%26%20Gold%20Curator%22%20(Ref%3A%20LB007)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Warm Embrace Box1.jpg"
+              alt="Warm Embrace Box" class="card-image" />
+            <div class="card-content">
+              <h3>Warm Embrace Box</h3>
+              <p>This heartfelt gift box is designed for comfort, sweetness, and a deeply personal touch.</p>
+              <p class="price">From EGP 850</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Warm%20Embrace%20Box%22%20(Ref%3A%20LB008)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Dream & Relax Pampering Kit.jpg"
+              alt="Dream & Relax Pampering Kit" class="card-image" />
+            <div class="card-content">
+              <h3>Dream & Relax Pampering Kit</h3>
+              <p>elax, unwind, and prioritize self-care with this delightful spa-themed box.</p>
+              <p class="price">From EGP 850</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Dream%20%26%20Relax%20Pampering%20Kit%22%20(Ref%3A%20LB009)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Celebration Timepiece Box (1).jpg"
+              alt="Celebration Timepiece Box" class="card-image" />
+            <div class="card-content">
+              <h3>Celebration Timepiece Box</h3>
+              <p>Make a grand statement with our Contemporary Celebration Box.</p>
+              <p class="price">From EGP 850</p>
+              <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box%2C%20I%27d%20like%20to%20order%20the%20gift%20box%3A%20%22Celebration%20Timepiece%20Box%22%20(Ref%3A%20LB010)"
+                class="btn" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Page -->
+      <div id="custom" class="page">
+        <h2>Design Your Own Gift Box</h2>
+        <p>Tell us your vision, and we'll bring it to life. Fill out the details below and let's chat on WhatsApp to
+          finalize your perfect gift.</p>
+        <form onsubmit="handleCustomSubmit(event)">
+          <label>
+            Gift Style (e.g., box, basket, surprise pouch)
+            <input type="text" name="style" required />
+          </label>
+          <label>
+            Occasion & Recipient (e.g., Birthday for my sister)
+            <input type="text" name="occasion" required />
+          </label>
+          <label>
+            Your personal message / Describe how you want it
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <label>
+            Upload reference image(s) (optional)
+            <input type="file" name="files" multiple onchange="updateFileCount(this)" />
+            <small>You'll be asked to send the actual images in our WhatsApp chat.</small>
+          </label>
+          <button type="submit" class="btn">Proceed via WhatsApp</button>
+        </form>
+      </div>
+
+      <!-- How It Works Page -->
+      <div id="how-it-works" class="page">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+          <div class="step">
+            <h3>1. Choose Your Gift</h3>
+            <p>Select from our lovely ready-made boxes or describe your perfect custom gift using our simple form.</p>
+          </div>
+          <div class="step">
+            <h3>2. We Design & Prepare</h3>
+            <p>Our team gets to work, crafting your gift box with love and attention to detail. We'll make sure it's
+              perfect.</p>
+          </div>
+          <div class="step">
+            <h3>3. Finalise on WhatsApp</h3>
+            <p>We'll chat with you on WhatsApp to confirm the details, arrange payment, and schedule the delivery.</p>
+          </div>
+          <div class="step">
+            <h3>4. We Deliver!</h3>
+            <p>Your beautiful gift is delivered anywhere across Egypt, ready to make someone's day special.</p>
+          </div>
+        </div>
+        <div class="timeline-info">
+          <h3>Expected Timelines</h3>
+          <p><strong>Ready-Made Boxes:</strong> Delivered within 24-48 hours in Cairo.</p>
+          <p><strong>Custom Boxes:</strong> Ready for delivery in 3-5 working days.</p>
+        </div>
+      </div>
+
+      <!-- FAQ Page -->
+      <div id="faq" class="page">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h4>How do I place an order?</h4>
+          <p>Simply choose a ready-made box or design a custom one, then click the "Order via WhatsApp" button. We'll
+            finalize everything with you in the chat!</p>
+        </div>
+        <div class="faq-item">
+          <h4>What are the payment options?</h4>
+          <p>We accept various payment methods via WhatsApp, including bank transfer, mobile wallets (like Vodafone
+            Cash), and cash on delivery in some areas. We'll provide options in our chat.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you deliver all over Egypt?</h4>
+          <p>Yes! We deliver across Egypt. Delivery times and fees vary depending on the governorate. We'll confirm the
+            details with you when you order.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What is your cancellation policy?</h4>
+          <p>For ready-made boxes, you can cancel up to 12 hours before the scheduled delivery. For custom boxes,
+            cancellations are possible before we begin production. Please chat with us as soon as possible if you need
+            to make a change.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Are my personal messages and photos kept private?</h4>
+          <p>Absolutely. Your privacy is our top priority. All messages, photos, and personal details shared with us for
+            your custom gift are kept strictly confidential and are only used to create your order.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>
+            <a href="https://wa.me/201558823438" target="_blank" rel="noopener noreferrer">WhatsApp: +20 155 882
+              3438</a>
+          </p>
+          <p>Gift shop made with love</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <a href="https://www.instagram.com/lovely_box_eg" target="_blank" rel="noopener noreferrer"
+            class="social-link">
+            @lovely_box_eg on Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Lovely Box. All Rights Reserved. Based in Cairo, Egypt.</p>
+      </div>
+    </footer>
+    <a href="https://wa.me/201558823438?text=Hi%20Lovely%20Box!" target="_blank" rel="noopener noreferrer"
+      class="floating-button" aria-label="Chat with us on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-icon">
+        <path fill="currentColor"
+          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 221.9-99.6 221.9-222 .1-59.3-23.1-115-64.8-156.7zM223.9 439.6c-38.2 0-73.7-14.7-101.6-40.4l-7.1-4.2-75.7 19.9 20.3-73.5-4.5-7.4c-26.3-43.6-42.5-95.2-42.5-149.3 0-110.2 89.4-199.6 199.6-199.6 54.8 0 105.7 21.4 144.1 59.8 38.5 38.5 59.8 89.3 59.8 144.1-.1 110.1-89.5 199.5-199.6 199.5zM333.6 295.3c-7.9-4-47.1-23.2-54.4-25.9-7.3-2.7-12.6-4-17.9 4-5.3 8-20.6 25.9-25.2 31.1-4.6 5.3-9.2 6-17.1 2-7.9-4-33.4-12.3-63.5-39.3-23.4-21-39.3-47.1-43.9-55-4.6-7.9-.5-12.2 3.5-16.1 3.5-3.5 7.9-9.2 11.9-13.8 4-4.6 5.3-7.9 7.9-13.2 2.7-5.3 1.3-9.9-1.3-13.8-2.7-3.9-17.9-43-24.6-58.6-6.5-15.5-13-13.2-17.9-13.4-4.6-.2-9.9-.2-15.2-.2-5.3 0-13.8 1.3-20.6 7.9-6.8 6.5-26.1 25.5-26.1 62.3 0 36.8 26.7 72.3 30.5 77.6 3.9 5.3 52.1 83.3 127.5 112.5 18.2 7.1 32.4 11.4 43.6 14.5 21 5.9 39.8 5.1 54.4 3.1 16.5-2.2 47.1-19.2 53.8-37.6 6.5-18.6 6.5-34.4 4.6-37.6-2.2-3.3-7.3-5.2-15.2-9.2z" />
+      </svg>
+    </a>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal-backdrop" style="display: none;">
+      <div class="modal-content">
+        <button class="close-button" onclick="closeQuizModal()">&times;</button>
+        <div id="quiz-content">
+          <!-- Quiz steps will be inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
